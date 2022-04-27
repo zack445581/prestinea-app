@@ -47,6 +47,8 @@
 
 <div class="color-{{ section.settings.color_scheme }} isolate gradient">
   <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
+    <div class="spaced-section" data-section-type="featured-collection">
+    <div class="container section-content">
       <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
         {%- if section.settings.title != blank -%}
           <h2 class="title {{ section.settings.heading_size }}">{{ section.settings.title | escape }}</h2>
@@ -102,7 +104,7 @@
         </a>
       </div>
     {%- endif -%}
-  </div>
+  </div></div></div>
 </div>
 
 {% schema %}
@@ -365,3 +367,61 @@
   ]
 }
 {% endschema %}
+
+{% stylesheet %}
+
+@media (min-width: 992px){
+  .container { 
+  padding: 60px 40px 0;
+  
+  }
+  }
+  @media (min-width: 768px){
+        
+        padding: 60px 40px 0;
+    }
+/*@media (min-width: 768px){
+  .banner-candidate:first-child+.shopify-section .spaced-section:first-of-type, .section-banner:first-child+.spaced-section {
+      margin-top: 0;
+  }
+}
+  @media (min-width: 768px){
+.spaced-section, .main-content>.shopify-policy__container {
+    margin-top: -59px;
+    margin-bottom: 80px;
+}
+
+.spaced-section, .main-content>.shopify-policy__container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+}
+@media (min-width: 768px){
+.banner-candidate:first-child+.shopify-section .section-content:not(.section-content--no-padding), .section-banner:first-child+.spaced-section .section-content {
+    padding: 80px 40px 0;
+}
+}
+@media (min-width: 768px){
+.banner-candidate:first-child+.shopify-section .section-content, .section-banner:first-child+.spaced-section .section-content {
+    position: relative;
+    margin-top: -30px;
+}
+}
+@media (min-width: 992px){
+.container {
+    width: calc(100% - 80px);
+}
+}
+@media (min-width: 768px){
+.container {
+    width: calc(100% - 60px);
+    padding: 60px 40px 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+.section-content {
+    background-color: #fff;
+}
+}*/
+
+{% endstylesheet %}
