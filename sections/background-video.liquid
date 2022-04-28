@@ -1,0 +1,161 @@
+<div id="shopify-section-template--15778129412324__16427755964110038b" class="shopify-section banner-candidate">
+   <style data-shopify="">#template--15778129412324__16427755964110038b .video-container { min-height: 250px; }@media (min-width: 480px) {
+      #template--15778129412324__16427755964110038b .video-container {
+      min-height: calc(250px + (650 - 250) * ((100vw - 480px) / 1020));
+      }
+      }
+      @media (min-width: 1600px) {
+      #template--15778129412324__16427755964110038b .video-container { min-height: 650px; }
+      }#template--15778129412324__16427755964110038b .video-container__image::after {
+      background-color: rgba(0, 0, 0, 0.1);
+      }#template--15778129412324__16427755964110038b .text-overlay { color: #ffffff; }
+   </style>
+   <div id="template--15778129412324__16427755964110038b" data-section-type="background-video">
+      <div class="video-container video-container--background content-align-center content-valign-center video--init video--play-started" data-video-id="cpb2nDk8F0I" data-video-url="https://www.youtube.com/watch?v=cpb2nDk8F0I" data-video-autoplay="true" data-video-loop="true" data-video-type="youtube">
+         <div class="video-container__media">
+            <div class="video-container__video" style="margin-top: -243.742px; height: 1147.5px;"><iframe class="video-container__video-element" id="theme-yt-video-1" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/cpb2nDk8F0I?iv_load_policy=3&amp;modestbranding=1&amp;autoplay=0&amp;loop=1&amp;playlist=cpb2nDk8F0I&amp;rel=0&amp;showinfo=0&amp;widget_referrer=https%3A%2F%2Falchemy-theme-modern.myshopify.com%2F%3F_bt%3DeyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWRoYkdOb1pXMTVMWFJvWlcxbExXMXZaR1Z5Ymk1dGVYTm9iM0JwWm5rdVkyOXRCam9HUlZRPSIsImV4cCI6IjIwMjItMDQtMjdUMTU6MTU6NTUuMTMyWiIsInB1ciI6InBlcm1hbmVudF9wYXNzd29yZF9ieXBhc3MifX0%253D--&amp;enablejsapi=1&amp;origin=https%3A%2F%2Falchemy-theme-modern.myshopify.com&amp;widgetid=1" __idm_id__="8003585"></iframe></div>
+            <div class="video-container__image has-overlay lazyload-placeholder loaded">
+               <img class="img-fit ls-is-cached lazyloaded" data-srcset="//cdn.shopify.com/s/files/1/0623/1559/3956/files/Cools_Club_blog_India_banner.jpg?v=1644246632&amp;width=750 750w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/Cools_Club_blog_India_banner.jpg?v=1644246632&amp;width=856 856w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/Cools_Club_blog_India_banner.jpg?v=1644246632&amp;width=1366 1366w" data-src="//cdn.shopify.com/s/files/1/0623/1559/3956/files/Cools_Club_blog_India_banner.jpg?v=1644246632&amp;width=1600" width="1471" height="640" alt="" srcset="//cdn.shopify.com/s/files/1/0623/1559/3956/files/Cools_Club_blog_India_banner.jpg?v=1644246632&amp;width=750 750w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/Cools_Club_blog_India_banner.jpg?v=1644246632&amp;width=856 856w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/Cools_Club_blog_India_banner.jpg?v=1644246632&amp;width=1366 1366w" src="//cdn.shopify.com/s/files/1/0623/1559/3956/files/Cools_Club_blog_India_banner.jpg?v=1644246632&amp;width=1600">
+               <noscript>
+                  <img src="//cdn.shopify.com/s/files/1/0623/1559/3956/files/Cools_Club_blog_India_banner.jpg?v=1644246632&width=1600" class="img-fit" width="1471" height="640" alt="">
+               </noscript>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+{% stylesheet %}
+    
+{% endstylesheet %}
+
+
+{% schema %}
+{
+  "name": "Background video",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Video",
+      "label": "t:sections.video.settings.heading.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "cover_image",
+      "label": "t:sections.video.settings.cover_image.label"
+    },
+    {
+      "type": "video_url",
+      "id": "video_url",
+      "accept": [
+        "youtube",
+        "vimeo"
+      ],
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+      "label": "t:sections.video.settings.video_url.label",
+      "placeholder": "t:sections.video.settings.video_url.placeholder",
+      "info": "t:sections.video.settings.video_url.info"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "t:sections.video.settings.description.label",
+      "info": "t:sections.video.settings.description.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "t:sections.video.settings.full_width.label",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Background video"
+    }
+  ]
+}
+{% endschema %}
