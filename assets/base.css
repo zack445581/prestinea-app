@@ -4327,8 +4327,8 @@ button,
   border-style: solid;
   border-radius: 100px;
   border-color: #343534;
-  background: #343534;
-  color: #ffffff;
+  /*background: #343534;*/
+  color: #343534;
   font-weight: bold;
   line-height: 1.5rem;
   text-transform: uppercase;
@@ -4356,8 +4356,8 @@ button,
 }
 
 .button:hover {
-  background: #ffffff;
-  color: #343534;
+  background: #383838;/*was #ffff*/
+  color: #ffff;/*was #343534*/
 }
 
 .button.button--alt {
