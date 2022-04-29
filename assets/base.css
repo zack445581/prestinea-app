@@ -2209,6 +2209,8 @@ input[type='checkbox'] {
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 @media screen and (min-width: 990px) {
@@ -7910,6 +7912,7 @@ h3.card__title {
 
 .slideshow.slick-initialized .slick-slide {
   display: flex;
+  flex: 35%;
 }
 
 [data-transition=fade] .slick-slide:not(.slick-current) {
