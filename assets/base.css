@@ -3446,7 +3446,7 @@ main {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -40px;
+  /*margin-left: -40px;*/
   padding: 0;
   list-style: none;
 }
@@ -3494,9 +3494,9 @@ main {
     width: auto;
   }
 
-  .grid {
+  /*.grid {
     margin: 0 0 -20px -20px;
-  }
+  }*/
 
   .grid--row-gutters {
     margin-bottom: -40px;
