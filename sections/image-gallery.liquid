@@ -14,7 +14,7 @@
    <div data-section-type="gallery" data-cc-animate="" class="cc-animate-init -in cc-animate-complete">
       <div class="flexible-layout">
          <div class="column-third img-block block-image-0">
-            <a class="img-block__img-wrapper cc-zoom-out cc-animate-init -in cc-animate-complete" href="/collections/the-original-suntoucher" data-cc-animate="cc-zoom-out">
+            <a class="img-block__img-wrapper cc-zoom-out cc-animate-init -in cc-animate-complete" href="{{ section.settings.text_url }}" data-cc-animate="cc-zoom-out">
                <div class="lazyload-placeholder loaded" style="padding-top: 137.25%;">
                   <picture>
                      <!--<source data-srcset="//cdn.shopify.com/s/files/1/0623/1559/3956/files/505W-Q122_0.jpg?v=1643881448&amp;width=640 640w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/505W-Q122_0.jpg?v=1643881448&amp;width=750 750w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/505W-Q122_0.jpg?v=1643881448&amp;width=856 856w" media="(max-width: 480px)" width="428" height="587" sizes="705.2823315118396px" srcset="//cdn.shopify.com/s/files/1/0623/1559/3956/files/505W-Q122_0.jpg?v=1643881448&amp;width=640 640w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/505W-Q122_0.jpg?v=1643881448&amp;width=750 750w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/505W-Q122_0.jpg?v=1643881448&amp;width=856 856w">-->
@@ -50,7 +50,7 @@
             </a>
          </div>
          <div class="column-third img-block block-image-1">
-            <a class="img-block__img-wrapper cc-zoom-out cc-animate-init -in cc-animate-complete" href="/collections/new-arrivals" data-cc-animate="cc-zoom-out">
+            <a class="img-block__img-wrapper cc-zoom-out cc-animate-init -in cc-animate-complete" href="{{ section.settings.text_url2 }}" data-cc-animate="cc-zoom-out">
                <div class="lazyload-placeholder loaded" style="padding-top: 137.25%;">
                   <picture>
                      <!--<source data-srcset="//cdn.shopify.com/s/files/1/0623/1559/3956/files/A34I8351.jpg?v=1643881546&amp;width=640 640w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/A34I8351.jpg?v=1643881546&amp;width=750 750w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/A34I8351.jpg?v=1643881546&amp;width=856 856w" media="(max-width: 480px)" width="428" height="587" sizes="705.2823315118396px" srcset="//cdn.shopify.com/s/files/1/0623/1559/3956/files/A34I8351.jpg?v=1643881546&amp;width=640 640w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/A34I8351.jpg?v=1643881546&amp;width=750 750w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/A34I8351.jpg?v=1643881546&amp;width=856 856w">
@@ -87,7 +87,7 @@
             </a>
          </div>
          <div class="column-third img-block block-image-2">
-            <a class="img-block__img-wrapper cc-zoom-out cc-animate-init -in cc-animate-complete" href="/collections/recycools-collection" data-cc-animate="cc-zoom-out">
+            <a class="img-block__img-wrapper cc-zoom-out cc-animate-init -in cc-animate-complete" href="{{ section.settings.text_url3 }}" data-cc-animate="cc-zoom-out">
                <div class="lazyload-placeholder loaded" style="padding-top: 125.0%;">
                   <picture>
                      <!--<source data-srcset="//cdn.shopify.com/s/files/1/0623/1559/3956/files/271474247_3456496524474861_7372086529365969756_n.jpg?v=1642774701&amp;width=640 640w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/271474247_3456496524474861_7372086529365969756_n.jpg?v=1642774701&amp;width=750 750w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/271474247_3456496524474861_7372086529365969756_n.jpg?v=1642774701&amp;width=856 856w" media="(max-width: 480px)" width="428" height="535" sizes="774.4000000000001px" srcset="//cdn.shopify.com/s/files/1/0623/1559/3956/files/271474247_3456496524474861_7372086529365969756_n.jpg?v=1642774701&amp;width=640 640w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/271474247_3456496524474861_7372086529365969756_n.jpg?v=1642774701&amp;width=750 750w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/271474247_3456496524474861_7372086529365969756_n.jpg?v=1642774701&amp;width=856 856w">
@@ -141,14 +141,29 @@
            "id": "image"
        },
        {
+           "type": "url",
+           "label": "Add link",
+           "id": "text_url"
+       },
+       {
            "type": "image_picker",
            "label": "Second Image",
            "id": "image_2"
        },
        {
+           "type": "url",
+           "label": "Add link",
+           "id": "text_url2"
+       },
+       {
            "type": "image_picker",
            "label": "Third Image",
            "id": "image_3"
+       },
+       {
+           "type": "url",
+           "label": "Add link",
+           "id": "text_url3"
        }
   ]/*,
   "blocks": [

@@ -48,8 +48,30 @@
    <div class="banner banner--bg banner--bg-image">
       <div class="banner__image lazyload-placeholder loaded">
          <picture>
-            <source data-srcset="//cdn.shopify.com/s/files/1/0623/1559/3956/collections/all.jpg?crop=center&amp;height=752&amp;v=1644426245&amp;width=805" media="(max-width: 480px)" width="805" height="752" srcset="//cdn.shopify.com/s/files/1/0623/1559/3956/collections/all.jpg?crop=center&amp;height=752&amp;v=1644426245&amp;width=805">
-            <img data-srcset="//cdn.shopify.com/s/files/1/0623/1559/3956/collections/all.jpg?v=1644426245&amp;width=1366 1366w, //cdn.shopify.com/s/files/1/0623/1559/3956/collections/all.jpg?v=1644426245&amp;width=1600 1600w, //cdn.shopify.com/s/files/1/0623/1559/3956/collections/all.jpg?v=1644426245&amp;width=1920 1920w" data-src="//cdn.shopify.com/s/files/1/0623/1559/3956/collections/all.jpg?v=1644426245&amp;width=1600" class="img-fit lazyloaded" width="2000" height="752" alt="Shop all" style="object-position: center;" srcset="//cdn.shopify.com/s/files/1/0623/1559/3956/collections/all.jpg?v=1644426245&amp;width=1366 1366w, //cdn.shopify.com/s/files/1/0623/1559/3956/collections/all.jpg?v=1644426245&amp;width=1600 1600w, //cdn.shopify.com/s/files/1/0623/1559/3956/collections/all.jpg?v=1644426245&amp;width=1920 1920w" src="//cdn.shopify.com/s/files/1/0623/1559/3956/collections/all.jpg?v=1644426245&amp;width=1600">
+            <!--<source data-srcset="//cdn.shopify.com/s/files/1/0623/1559/3956/collections/all.jpg?crop=center&amp;height=752&amp;v=1644426245&amp;width=805" media="(max-width: 480px)" width="805" height="752" srcset="//cdn.shopify.com/s/files/1/0623/1559/3956/collections/all.jpg?crop=center&amp;height=752&amp;v=1644426245&amp;width=805">
+            <img data-srcset="//cdn.shopify.com/s/files/1/0623/1559/3956/collections/all.jpg?v=1644426245&amp;width=1366 1366w, //cdn.shopify.com/s/files/1/0623/1559/3956/collections/all.jpg?v=1644426245&amp;width=1600 1600w, //cdn.shopify.com/s/files/1/0623/1559/3956/collections/all.jpg?v=1644426245&amp;width=1920 1920w" data-src="//cdn.shopify.com/s/files/1/0623/1559/3956/collections/all.jpg?v=1644426245&amp;width=1600" class="img-fit lazyloaded" width="2000" height="752" alt="Shop all" style="object-position: center;" srcset="//cdn.shopify.com/s/files/1/0623/1559/3956/collections/all.jpg?v=1644426245&amp;width=1366 1366w, //cdn.shopify.com/s/files/1/0623/1559/3956/collections/all.jpg?v=1644426245&amp;width=1600 1600w, //cdn.shopify.com/s/files/1/0623/1559/3956/collections/all.jpg?v=1644426245&amp;width=1920 1920w" src="//cdn.shopify.com/s/files/1/0623/1559/3956/collections/all.jpg?v=1644426245&amp;width=1600">-->
+            
+
+        <img
+                        srcset="{%- if collection.image.width >= 375 -%}{{ collection.image | image_url: width: 375 }} 375w,{%- endif -%}
+                        {%- if collection.image.width >= 550 -%}{{ collection.image | image_url: width: 550 }} 550w,{%- endif -%}
+                        {%- if collection.image.width >= 750 -%}{{ collection.image | image_url: width: 750 }} 750w,{%- endif -%}
+                        {%- if collection.image.width >= 1100 -%}{{ collection.image | image_url: width: 1100 }} 1100w,{%- endif -%}
+                        {%- if collection.image.width >= 1500 -%}{{ collection.image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                        {%- if collection.image.width >= 1780 -%}{{ collection.image | image_url: width: 1780 }} 1780w,{%- endif -%}
+                        {%- if collection.image.width >= 2000 -%}{{ collection.image | image_url: width: 2000 }} 2000w,{%- endif -%}
+                        {%- if collection.image.width >= 3000 -%}{{ collection.image | image_url: width: 3000 }} 3000w,{%- endif -%}
+                        {%- if collection.image.width >= 3840 -%}{{ collection.image | image_url: width: 3840 }} 3840w,{%- endif -%}
+                        {{ collection.image | image_url }} {{ collection.image.width }}w"
+                        src="{{ collection.image | image_url: width: 1500 }}"
+                        class="img-fit lazyautosizes ls-is-cached lazyloaded"
+                        loading="lazy"
+                        alt="{{ collection.title | escape }}"
+                        width="{{ collection.image.width }}"
+                        height="{{ collection.image.height | divided_by: collection.image.aspect_ratio }}"
+                    >
+      
+    
          </picture>
       </div>
       <span class="banner__overlay"></span>

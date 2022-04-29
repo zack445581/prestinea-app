@@ -1,6 +1,6 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 
-{%- if section.settings.adapt_height_first_image and section.settings.image != blank -%}
+<!--{%- if section.settings.adapt_height_first_image and section.settings.image != blank -%}
   {%- style -%}
   @media screen and (max-width: 749px) {
     #Banner-{{ section.id }}::before,
@@ -28,6 +28,7 @@
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
 {%- endstyle -%}
+-->
 
 <!--<div id="Banner-{{ section.id }}" class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
   {%- if section.settings.image != blank -%}
@@ -117,7 +118,7 @@
   color: #000000;
 }</style><div class="slideshow-section" id="template--15778129412324__slideshow" data-section-type="slideshow">
 
-<div class="slideshow viewport-height slick-initialized slick-slider" data-transition="slide" data-autoplay="true" data-autoplay-speed="5" data-carousel="true"><div aria-live="polite" class="slick-list draggable"><div class="slick-track" aria-label="Image slider" role="listbox" style="opacity: 1; width: 1676px; transform: translate3d(0px, 0px, 0px);"><div class="slide block-1 content-align-center content-valign-center slick-slide slick-current slick-active" data-index="1" data-slick-index="0" aria-hidden="false" style="width: 838px;" tabindex="-1" role="option">
+<div class="slideshow viewport-height slick-initialized slick-slider" data-transition="slide" data-autoplay="true" data-autoplay-speed="5" data-carousel="true"><div aria-live="polite" class="slick-list draggable"><div class="slick-track" aria-label="Image slider" role="listbox" style="opacity: 1;  transform: translate3d(0px, 0px, 0px);"><div class="slide block-1 content-align-center content-valign-center slick-slide slick-current slick-active" data-index="1" data-slick-index="0" aria-hidden="false" style="width: 838px;" tabindex="-1" role="option">
         <div class="slide__image has-overlay lazyload-placeholder loaded"><picture><source data-srcset="//cdn.shopify.com/s/files/1/0623/1559/3956/files/A34I8428-_3.jpg?crop=center&amp;height=1500&amp;v=1644259777&amp;width=750 750w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/A34I8428-_3.jpg?crop=center&amp;height=1712&amp;v=1644259777&amp;width=856 856w" media="(max-width: 480px)" width="428" height="856" srcset="//cdn.shopify.com/s/files/1/0623/1559/3956/files/A34I8428-_3.jpg?crop=center&amp;height=1500&amp;v=1644259777&amp;width=750 750w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/A34I8428-_3.jpg?crop=center&amp;height=1712&amp;v=1644259777&amp;width=856 856w"><img data-srcset="//cdn.shopify.com/s/files/1/0623/1559/3956/files/A34I8428-_3.jpg?v=1644259777&amp;width=600 600w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/A34I8428-_3.jpg?v=1644259777&amp;width=960 960w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/A34I8428-_3.jpg?v=1644259777&amp;width=1200 1200w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/A34I8428-_3.jpg?v=1644259777&amp;width=1440 1440w" data-src="//cdn.shopify.com/s/files/1/0623/1559/3956/files/A34I8428-_3.jpg?v=1644259777&amp;width=960" data-sizes="(max-aspect-ratio: 1/2) 50vh, 50vw" src="//cdn.shopify.com/s/files/1/0623/1559/3956/files/A34I8428-_3.jpg?v=1644259777&amp;width=960" class="img-fit img-fit--center img-fit--mob-center lazyloaded" width="1600" height="2196" alt="" sizes="(max-aspect-ratio: 1/2) 50vh, 50vw" srcset="//cdn.shopify.com/s/files/1/0623/1559/3956/files/A34I8428-_3.jpg?v=1644259777&amp;width=600 600w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/A34I8428-_3.jpg?v=1644259777&amp;width=960 960w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/A34I8428-_3.jpg?v=1644259777&amp;width=1200 1200w, //cdn.shopify.com/s/files/1/0623/1559/3956/files/A34I8428-_3.jpg?v=1644259777&amp;width=1440 1440w"></picture>
             <noscript>
               <img class="img-fit img-fit--mob-center img-fit--center" src="//cdn.shopify.com/s/files/1/0623/1559/3956/files/A34I8428-_3.jpg?v=1644259777&width=1680" width="1600" height="2196" alt="">
@@ -655,4 +656,6 @@ min-height: calc(var(--viewport-height, 100vh) - var(--header-height, 96px) + 26
 
 /* min-height: calc(var(--viewport-height, 100vh) - var(--header-height, 96px) + 26px); */
 min-height: var(--viewport-height, 100vh);  /* min-height: var(--viewport-height, 100vh); */ 
+
+
 {% endstylesheet %}
