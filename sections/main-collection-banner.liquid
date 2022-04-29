@@ -54,10 +54,10 @@
       </div>
       <span class="banner__overlay"></span>
       <div class="banner__text container reading-width cc-animate-init -in cc-animate-complete" data-cc-animate="">
-         <h1>Shop all</h1>
+         <h1>{{ section.settings.header_text }}</h1>
          <div class="rte reading-width align-center large-text cc-animate-init -in cc-animate-complete" data-cc-animate="" data-cc-animate-delay="0.1s" style="">
             <meta charset="utf-8">
-            <span data-mce-fragment="1">This is a demonstration of the Alchemy theme for Shopify. Joyful everyday women's clothing by&nbsp;</span><a href="https://coolsclub.co/" title="Cools Club" data-mce-fragment="1" data-mce-href="https://coolsclub.co/" target="_blank">Cools Club</a>
+            <span data-mce-fragment="1">{{ section.settings.description_text }}</span>
          </div>
       </div>
       <script type="application/ld+json">
@@ -104,6 +104,16 @@
   "name": "t:sections.main-collection-banner.name",
   "class": "section",
   "settings": [
+    {
+      "type": "text",
+      "id": "header_text",
+      "label": "Header Text"
+    },
+    {
+      "type": "text",
+      "id": "description_text",
+      "label": "Description"
+    },
     {
       "type": "paragraph",
       "content": "t:sections.main-collection-banner.settings.paragraph.content"

@@ -3757,7 +3757,7 @@ h3, .h3, #shopify-product-reviews .spr-form-title,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin: 0 0 0.75em;
+  /*margin: 0 0 0.75em;*/
   color: #343534;
   font-family: "Century Gothic", sans-serif;
   font-style: normal;
@@ -3788,7 +3788,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  margin: 0 0 1em;
+  /*margin: 0 0 1em;*/
   font-size: 1.1rem;
 }
 
